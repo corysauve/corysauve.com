@@ -1,48 +1,42 @@
 ---
 authors:
 - admin
-bio: My research interests include distributed robotics, mobile computing and programmable
-  matter.
+bio: My interests include all things relating to water, data science, and sports
 education:
   courses:
-  - course: PhD in Artificial Intelligence
-    institution: Stanford University
-    year: 2012
-  - course: MEng in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2009
-  - course: BSc in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2008
+  - course: M.S. Environmental Science/Public Affairs 
+    institution: Indiana University, Bloomington, IN
+    year: 2019  
+  - course: B.S. Biology - Fisheries
+    institution: Mansfield University of Pennsylvania, Mansfield, PA 
+    year: 2017
 email: ""
 interests:
-- Artificial Intelligence
-- Computational Linguistics
-- Information Retrieval
-name: Nelson Bighetti
+- Aquatic ecology
+- Data science 
+- Open-source programming
+name: Cory Sauve
 organizations:
-- name: Stanford University
-  url: ""
-role: Professor of Artificial Intelligence
+- name: Indiana Clean Lakes Program
+  url: clp.indiana.edu
+role: Graduate Assistant 
 social:
 - icon: envelope
   icon_pack: fas
   link: '#contact'
 - icon: twitter
   icon_pack: fab
-  link: https://twitter.com/GeorgeCushen
-- icon: google-scholar
-  icon_pack: ai
-  link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
+  link: https://twitter.com/TheCorySauve
+- icon: linkedin
+  icon_pack: fab
+  link: https://www.linkedin.com/in/corysauve/
 - icon: github
   icon_pack: fab
-  link: https://github.com/gcushen
+  link: https://github.com/corysauve
 superuser: true
 user_groups:
 - Researchers
 - Visitors
 ---
 
-Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate. 
+Hi, I'm Cory, a graduate student at Indiana University! I'm currently pursuing Masters degrees in both Environmental Science and Public Affairs at the O'Neill School of Public and Enviornmental Affairs. Most of my interests lie in using data science techniques to better understand aquatic systems. In my free time, I enjoy analzying interesting data in R, exploring the outdoors, cooking, and coffee.
