@@ -11,9 +11,9 @@ education:
     institution: Mansfield University of Pennsylvania, Mansfield, PA 
     year: 2017
 email: ""
-interests:
+interests: 
 - Aquatic ecology
-- Data science 
+- Data science
 - Open-source programming
 name: Cory Sauve
 organizations:
