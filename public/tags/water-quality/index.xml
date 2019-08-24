@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>water quality | Cory Sauve</title>
+    <link>/tags/water-quality/</link>
+      <atom:link href="/tags/water-quality/index.xml" rel="self" type="application/rss+xml" />
+    <description>water quality</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 21 Mar 2019 16:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>water quality</title>
+      <link>/tags/water-quality/</link>
+    </image>
+    
+    <item>
+      <title>A story of Indiana lakes through data - The Indiana Lake Water Quality Assessment Report for 2015 to 2019</title>
+      <link>/talk/ilms19/</link>
+      <pubDate>Thu, 21 Mar 2019 16:00:00 +0000</pubDate>
+      <guid>/talk/ilms19/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Indiana Lake Water Quality Assessment Report for 2015-2019</title>
+      <link>/publication/lwqa19/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/lwqa19/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Changes in water quality across a longitudinal gradient in Lake Lemon, Indiana - A 20-Year Perspective</title>
+      <link>/talk/nalms18/</link>
+      <pubDate>Wed, 31 Oct 2018 13:30:00 +0000</pubDate>
+      <guid>/talk/nalms18/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

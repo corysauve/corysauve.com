@@ -3,207 +3,140 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/corysauve.github.io.git/courses/example/example1/</loc>
+    <loc>/courses/example/example1/</loc>
     <lastmod>2019-05-05T00:00:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/corysauve.github.io.git/courses/example/</loc>
+    <loc>/courses/example/</loc>
     <lastmod>2018-09-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/corysauve.github.io.git/courses/example/example2/</loc>
+    <loc>/courses/example/example2/</loc>
     <lastmod>2019-05-05T00:00:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/corysauve.github.io.git/</loc>
-    <lastmod>2030-06-01T13:00:00+00:00</lastmod>
+    <loc>/</loc>
+    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/corysauve.github.io.git/talk/example/</loc>
-    <lastmod>2030-06-01T13:00:00+00:00</lastmod>
+    <loc>/authors/admin/</loc>
+    <lastmod>2019-03-21T16:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/corysauve.github.io.git/talk/</loc>
-    <lastmod>2030-06-01T13:00:00+00:00</lastmod>
+    <loc>/talk/ilms19/</loc>
+    <lastmod>2019-03-21T16:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/corysauve.github.io.git/post/</loc>
-    <lastmod>2019-07-12T00:00:00+00:00</lastmod>
+    <loc>/authors/</loc>
+    <lastmod>2019-03-21T16:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/corysauve.github.io.git/post/writing-technical-content/</loc>
-    <lastmod>2019-07-12T00:00:00+00:00</lastmod>
+    <loc>/tags/lake-management/</loc>
+    <lastmod>2019-03-21T16:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/corysauve.github.io.git/authors/admin/</loc>
-    <lastmod>2019-04-17T00:00:00+00:00</lastmod>
+    <loc>/talk/</loc>
+    <lastmod>2019-03-21T16:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/corysauve.github.io.git/publication_types/3/</loc>
-    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
+    <loc>/tags/</loc>
+    <lastmod>2019-03-21T16:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/corysauve.github.io.git/publication/preprint/</loc>
-    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
+    <loc>/tags/water-quality/</loc>
+    <lastmod>2019-03-21T16:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/corysauve.github.io.git/authors/</loc>
-    <lastmod>2019-04-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/corysauve.github.io.git/publication_types/</loc>
-    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/corysauve.github.io.git/publication/</loc>
-    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/corysauve.github.io.git/tags/source-themes/</loc>
-    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/corysauve.github.io.git/tags/</loc>
-    <lastmod>2019-04-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/corysauve.github.io.git/post/jupyter/</loc>
+    <loc>/slides/</loc>
     <lastmod>2019-02-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/corysauve.github.io.git/slides/</loc>
+    <loc>/slides/example/</loc>
     <lastmod>2019-02-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/corysauve.github.io.git/slides/example/</loc>
-    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
+    <loc>/publication/lwqa19/</loc>
+    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/corysauve.github.io.git/privacy/</loc>
+    <loc>/authors/melissa-laney/</loc>
+    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/</loc>
+    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/sarah-powers/</loc>
+    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/talk/nalms18/</loc>
+    <lastmod>2018-10-31T13:30:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/privacy/</loc>
     <lastmod>2018-06-28T00:00:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/corysauve.github.io.git/terms/</loc>
+    <loc>/terms/</loc>
     <lastmod>2018-06-28T00:00:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/corysauve.github.io.git/tags/deep-learning/</loc>
+    <loc>/tags/deep-learning/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/corysauve.github.io.git/tags/demo/</loc>
+    <loc>/tags/demo/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/corysauve.github.io.git/project/external-project/</loc>
+    <loc>/project/external-project/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/corysauve.github.io.git/project/internal-project/</loc>
+    <loc>/project/internal-project/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/corysauve.github.io.git/project/</loc>
+    <loc>/project/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/corysauve.github.io.git/tags/academic/</loc>
-    <lastmod>2019-04-17T00:00:00+00:00</lastmod>
+    <loc>/categories/</loc>
   </url>
   
   <url>
-    <loc>/corysauve.github.io.git/post/getting-started/</loc>
-    <lastmod>2019-04-17T00:00:00+00:00</lastmod>
+    <loc>/courses/</loc>
   </url>
   
   <url>
-    <loc>/corysauve.github.io.git/categories/</loc>
-    <lastmod>2019-04-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/corysauve.github.io.git/categories/demo/</loc>
-    <lastmod>2019-04-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/corysauve.github.io.git/publication_types/2/</loc>
-    <lastmod>2015-09-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/corysauve.github.io.git/publication/journal-article/</loc>
-    <lastmod>2015-09-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/corysauve.github.io.git/authors/robert-ford/</loc>
-    <lastmod>2015-09-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/corysauve.github.io.git/post/2015-07-23-r-rmarkdown/</loc>
-    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/corysauve.github.io.git/tags/plot/</loc>
-    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/corysauve.github.io.git/categories/r/</loc>
-    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/corysauve.github.io.git/tags/r-markdown/</loc>
-    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/corysauve.github.io.git/tags/regression/</loc>
-    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/corysauve.github.io.git/publication_types/1/</loc>
-    <lastmod>2013-07-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/corysauve.github.io.git/publication/conference-paper/</loc>
-    <lastmod>2013-07-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/corysauve.github.io.git/courses/</loc>
+    <loc>/publication_types/</loc>
   </url>
   
 </urlset>

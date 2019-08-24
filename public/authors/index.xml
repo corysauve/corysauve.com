@@ -2,30 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Authors | Cory Sauve</title>
-    <link>/corysauve.github.io.git/authors/</link>
-      <atom:link href="/corysauve.github.io.git/authors/index.xml" rel="self" type="application/rss+xml" />
+    <link>/authors/</link>
+      <atom:link href="/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Authors</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 07 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 21 Mar 2019 16:00:00 +0000</lastBuildDate>
     <image>
-      <url>/corysauve.github.io.git/img/icon-192.png</url>
+      <url>/img/icon-192.png</url>
       <title>Authors</title>
-      <link>/corysauve.github.io.git/authors/</link>
+      <link>/authors/</link>
     </image>
     
     <item>
       <title></title>
-      <link>/corysauve.github.io.git/authors/admin/</link>
-      <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>/corysauve.github.io.git/authors/admin/</guid>
-      <description>&lt;p&gt;Hi, I&amp;rsquo;m Cory, a graduate student at Indiana University! I&amp;rsquo;m currently pursuing Masters degrees in both Environmental Science and Public Affairs at the O&amp;rsquo;Neill School of Public and Enviornmental Affairs. Most of my interests lie in using data science techniques to better understand aquatic systems. In my free time, I enjoy analzying interesting data in R, exploring the outdoors, cooking, and coffee.&lt;/p&gt;
+      <link>/authors/admin/</link>
+      <pubDate>Thu, 21 Mar 2019 16:00:00 +0000</pubDate>
+      <guid>/authors/admin/</guid>
+      <description>&lt;p&gt;Hi, I&amp;rsquo;m Cory, a graduate student at Indiana University! I&amp;rsquo;m currently pursuing Masters degrees in both Environmental Science and Public Affairs at the O&amp;rsquo;Neill School of Public and Enviornmental Affairs. Most of my interests involve using data science techniques to better understand aquatic systems. In my free time, I enjoy analzying interesting data in R, exploring the outdoors, cooking, and coffee.&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>Robert Ford</title>
-      <link>/corysauve.github.io.git/authors/robert-ford/</link>
-      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
-      <guid>/corysauve.github.io.git/authors/robert-ford/</guid>
+      <title>Melissa Laney</title>
+      <link>/authors/melissa-laney/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/authors/melissa-laney/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sarah Powers</title>
+      <link>/authors/sarah-powers/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/authors/sarah-powers/</guid>
       <description></description>
     </item>
     

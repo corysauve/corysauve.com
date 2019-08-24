@@ -39,4 +39,4 @@ user_groups:
 - Visitors
 ---
 
-Hi, I'm Cory, a graduate student at Indiana University! I'm currently pursuing Masters degrees in both Environmental Science and Public Affairs at the O'Neill School of Public and Enviornmental Affairs. Most of my interests lie in using data science techniques to better understand aquatic systems. In my free time, I enjoy analzying interesting data in R, exploring the outdoors, cooking, and coffee.
+Hi, I'm Cory, a graduate student at Indiana University! I'm currently pursuing Masters degrees in both Environmental Science and Public Affairs at the O'Neill School of Public and Enviornmental Affairs. Most of my interests involve using data science techniques to better understand aquatic systems. In my free time, I enjoy analzying interesting data in R, exploring the outdoors, cooking, and coffee.

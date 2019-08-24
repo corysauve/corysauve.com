@@ -2,7 +2,7 @@
 # Experience widget.
 widget = "experience"  # See https://sourcethemes.com/academic/docs/page-builder/
 headless = true  # This file represents a page section.
-active = false  # Activate this widget? true/false
+active = true  # Activate this widget? true/false
 weight = 40  # Order that this section will appear.
 
 title = "Experience"
@@ -35,5 +35,41 @@ date_format = "Jan 2006"
   * Collected and supervised the enumeration and identification of macroinvertebrate samples for a 3-year stream monitoring program
   * Conducted field limnological assessments and laboratory analysis for physical, biological, and chemical parameters in support of the Indiana Lake Water Quality Assessment
 
-  """
+"""
+
+[[experience]]
+  title = "Teaching Assistant"
+  company = "Indiana University"
+  company_url = "https://clp.indiana.edu/index.html"
+  location = "Bloomington, Indiana"
+  date_start = "2018-05-01"
+  description = """
+
+  
+  * Limnology (Fall 2018, 2019) 
+  
+    + Instructed a laboratory section for 28 undergraduate and graduate students focusing on lake sampling methods, water quality analysis, phytoplankton and zooplankton taxonomy, benthic macroinvertebrate collection and identification, and freshwater fish taxonomy
+  * Techniques in Environmental Science (Summer 2018, 2019)
+    + Co-instructed 8 undergraduate students in field and laboratory methods relating to terrestrial and aquatic ecosystems
+  * Stream Ecology (Spring 2019)   
+    + Co-instructed a stream ecology capstone for 12 graduate students incorporating field and laboratory analyses focusing on biological integrity, stream metabolism, and water quality
+
+"""
+
+[[experience]]
+  title = "Water Pollution Biologist Intern"
+  company = "PA Department of Environmental Protection"
+  company_url = "https://clp.indiana.edu/index.html"
+  location = "Harrisburg, PA"
+  date_start = "2014-05-01"
+  date_end = "2016-01-01"
+  description = """
+
+  * Performed stream assessments for the biennial Integrated Water Quality Monitoring and Assessment Report
+  * Collected water quality data in support of the Susquehanna River Study
+  * Sampled and identified benthic macroinvertebrate communities for Section 303(d) designations
+  * Conducted fish tissue surveys for the development of fish consumption advisories
+  * Surveyed headwater streams through wild trout electrofishing assessments for the Unassessed Waters Initiative
+  
+"""
 +++
