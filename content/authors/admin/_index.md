@@ -18,7 +18,7 @@ interests:
 name: Cory Sauve
 organizations:
 - name: Indiana Clean Lakes Program
-  url: clp.indiana.edu
+  url: https://clp.indiana.edu/index.html
 role: Graduate Assistant 
 social:
 - icon: envelope
