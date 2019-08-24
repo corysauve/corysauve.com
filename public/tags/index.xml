@@ -2,69 +2,69 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags | Cory Sauve</title>
-    <link>/corysauve.netlify.com/tags/</link>
-      <atom:link href="/corysauve.netlify.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <link>/corysauve.github.io.git/tags/</link>
+      <atom:link href="/corysauve.github.io.git/tags/index.xml" rel="self" type="application/rss+xml" />
     <description>Tags</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 07 Apr 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/corysauve.netlify.com/img/icon-192.png</url>
+      <url>/corysauve.github.io.git/img/icon-192.png</url>
       <title>Tags</title>
-      <link>/corysauve.netlify.com/tags/</link>
+      <link>/corysauve.github.io.git/tags/</link>
     </image>
     
     <item>
       <title>Source Themes</title>
-      <link>/corysauve.netlify.com/tags/source-themes/</link>
+      <link>/corysauve.github.io.git/tags/source-themes/</link>
       <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>/corysauve.netlify.com/tags/source-themes/</guid>
+      <guid>/corysauve.github.io.git/tags/source-themes/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Deep Learning</title>
-      <link>/corysauve.netlify.com/tags/deep-learning/</link>
+      <link>/corysauve.github.io.git/tags/deep-learning/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/corysauve.netlify.com/tags/deep-learning/</guid>
+      <guid>/corysauve.github.io.git/tags/deep-learning/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Demo</title>
-      <link>/corysauve.netlify.com/tags/demo/</link>
+      <link>/corysauve.github.io.git/tags/demo/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/corysauve.netlify.com/tags/demo/</guid>
+      <guid>/corysauve.github.io.git/tags/demo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Academic</title>
-      <link>/corysauve.netlify.com/tags/academic/</link>
+      <link>/corysauve.github.io.git/tags/academic/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/corysauve.netlify.com/tags/academic/</guid>
+      <guid>/corysauve.github.io.git/tags/academic/</guid>
       <description></description>
     </item>
     
     <item>
       <title>plot</title>
-      <link>/corysauve.netlify.com/tags/plot/</link>
+      <link>/corysauve.github.io.git/tags/plot/</link>
       <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
-      <guid>/corysauve.netlify.com/tags/plot/</guid>
+      <guid>/corysauve.github.io.git/tags/plot/</guid>
       <description></description>
     </item>
     
     <item>
       <title>R Markdown</title>
-      <link>/corysauve.netlify.com/tags/r-markdown/</link>
+      <link>/corysauve.github.io.git/tags/r-markdown/</link>
       <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
-      <guid>/corysauve.netlify.com/tags/r-markdown/</guid>
+      <guid>/corysauve.github.io.git/tags/r-markdown/</guid>
       <description></description>
     </item>
     
     <item>
       <title>regression</title>
-      <link>/corysauve.netlify.com/tags/regression/</link>
+      <link>/corysauve.github.io.git/tags/regression/</link>
       <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
-      <guid>/corysauve.netlify.com/tags/regression/</guid>
+      <guid>/corysauve.github.io.git/tags/regression/</guid>
       <description></description>
     </item>
     
