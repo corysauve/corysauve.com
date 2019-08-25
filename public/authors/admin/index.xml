@@ -5,12 +5,20 @@
     <link>/authors/admin/</link>
       <atom:link href="/authors/admin/index.xml" rel="self" type="application/rss+xml" />
     <description>Cory Sauve</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 21 Mar 2019 16:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 12 Nov 2019 15:30:00 +0000</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Cory Sauve</title>
       <link>/authors/admin/</link>
     </image>
+    
+    <item>
+      <title>Telling the story of Indiana lake water quality with interactive web-based mapping and data visualization</title>
+      <link>/talk/nalms19/</link>
+      <pubDate>Tue, 12 Nov 2019 15:30:00 +0000</pubDate>
+      <guid>/talk/nalms19/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>A story of Indiana lakes through data - The Indiana Lake Water Quality Assessment Report for 2015 to 2019</title>

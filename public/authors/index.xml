@@ -5,7 +5,7 @@
     <link>/authors/</link>
       <atom:link href="/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Authors</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 21 Mar 2019 16:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 12 Nov 2019 15:30:00 +0000</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Authors</title>
@@ -15,7 +15,7 @@
     <item>
       <title></title>
       <link>/authors/admin/</link>
-      <pubDate>Thu, 21 Mar 2019 16:00:00 +0000</pubDate>
+      <pubDate>Tue, 12 Nov 2019 15:30:00 +0000</pubDate>
       <guid>/authors/admin/</guid>
       <description>&lt;p&gt;Hi, I&amp;rsquo;m Cory, a graduate student at Indiana University! I&amp;rsquo;m currently pursuing Masters degrees in both Environmental Science and Public Affairs at the O&amp;rsquo;Neill School of Public and Enviornmental Affairs. Most of my interests involve using data science techniques to better understand aquatic systems. In my free time, I enjoy analzying interesting data in R, exploring the outdoors, cooking, and coffee.&lt;/p&gt;
 </description>

@@ -15,15 +15,10 @@ education:
     year: 2017
 email: ""
 interests: 
-- Aquatic ecology
-- Data visualization 
-- Data science
 
 name: Cory Sauve
-organizations:
-- name: Indiana Clean Lakes Program
-  url: https://clp.indiana.edu/index.html
-role: Graduate Assistant 
+organizations: 
+role: Scientist | Data nerd | Coffee drinker 
 social:
 - icon: envelope
   icon_pack: fas

@@ -2,7 +2,7 @@
 # A Skills section created with the Featurette widget.
 widget = "featurette"  # See https://sourcethemes.com/academic/docs/page-builder/
 headless = true  # This file represents a page section.
-active = false  # Activate this widget? true/false
+active = true  # Activate this widget? true/false
 weight = 30  # Order that this section will appear.
 
 title = "Skills"
@@ -18,18 +18,60 @@ subtitle = ""
   icon = "r-project"
   icon_pack = "fab"
   name = "R"
-  description = "90%"
-  
+  description = ""
+
+[[feature]]
+  icon = "python"
+  icon_pack = "fab"
+  name = "python"
+  description = ""
+
+[[feature]]
+  icon = "database"
+  icon_pack = "fas"
+  name = "SQL"
+  description = ""
+
+[[feature]]
+  icon = "html5"
+  icon_pack = "fab"
+  name = "HTML"
+  description = ""
+
+[[feature]]
+  icon = "globe"
+  icon_pack = "fas"
+  name = "Esri"
+  description = "ArcMap, Story Maps"
+
 [[feature]]
   icon = "chart-line"
   icon_pack = "fas"
-  name = "Statistics"
-  description = "100%"  
+  name = "Data visualization"
+  description = "`ggplot2`, `matplotlib`, `Shiny`"  
+
+[[feature]]
+  icon = "fish"
+  icon_pack = "fas"
+  name = "Fisheries science"
+  description = "Mgmt, PopDy"  
   
 [[feature]]
-  icon = "camera-retro"
+  icon = "water"
   icon_pack = "fas"
-  name = "Photography"
-  description = "10%"
+  name = "Field assessment"
+  description = "biotic integrity, water chem, wetlands, TMDL"
+  
+[[feature]]
+  icon = "flask"
+  icon_pack = "fas"
+  name = "Lab analysis"
+  description = "microscopy, nutrient analysis, water chem"
+
+[[feature]]
+  icon = "microscope"
+  icon_pack = "fas"
+  name = "Taxonomy"
+  description = "fishes, macros, algae"  
 
 +++

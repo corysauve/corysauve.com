@@ -1,5 +1,5 @@
 ---
-abstract: 
+abstract: All water quality monitoring programs have the ability to effectively tell a story through the data that are collected.  The concept of telling a story through data is often lost on many researchers, as conveying complex results to a diverse assemblage of stakeholders comes with numerous difficulties.  This talk will illustrate how to utilize various open-source tools to effectively tell a story through data collected from Indiana Lakes.  The data used in this talk were collected primarily during the Indiana Lake Water Quality Assessment Report for 2015 to 2018, where we sampled 329 lakes to identify water quality trends across the state of Indiana.  The assessment was conducted by the Indiana Clean Lakes Program, a multifaceted water monitoring and education program developed in 1989 in partnership with the Indiana Department of Environmental Management and administered through the Indiana University School of Public and Environmental Affairs. 
 all_day: false
 authors:
 - admin
