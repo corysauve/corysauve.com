@@ -4,17 +4,21 @@ authors:
 bio: My interests include all things relating to water, data science, and sports
 education:
   courses:
-  - course: M.S. Environmental Science/Public Affairs 
+  - course: Master of Science in Environmental Science
     institution: Indiana University, Bloomington, IN
     year: 2019  
-  - course: B.S. Biology - Fisheries
+  - course: Master of Public Affairs 
+    institution: Indiana Univeristy Bloomington, IN
+    year: 2019 
+  - course: Bachelor of Science in Biology - Fisheries
     institution: Mansfield University of Pennsylvania, Mansfield, PA 
     year: 2017
 email: ""
 interests: 
 - Aquatic ecology
+- Data visualization 
 - Data science
-- Open-source programming
+
 name: Cory Sauve
 organizations:
 - name: Indiana Clean Lakes Program
