@@ -18,7 +18,7 @@ interests:
 
 name: Cory Sauve
 organizations: 
-role: Scientist | Data nerd | Coffee drinker 
+role: Grad student | Data nerd | Coffee drinker 
 social:
 - icon: envelope
   icon_pack: fas
