@@ -16,11 +16,11 @@ math: true
 projects:
 publishDate: "2017-01-01T00:00:00Z"
 slides:
-summary: Upcoming talk at the 39th International Symposium of the North American Lake Management Society in Burlington, VT!
+summary: Talk presented at the 39th International Symposium of the North American Lake Management Society in Burlington, VT!
 tags: [data visualization, GIS, citizen science, lake management]
 title: Telling the story of Indiana lake water quality with interactive web-based mapping and data visualization
-url_code: ""
-url_pdf: ""
+url_code: "https://github.com/corysauve/NALMS-2019/"
+url_pdf: "Sauve_NALMS19_Talk.pdf"
 ---
 
 
