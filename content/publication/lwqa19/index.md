@@ -21,7 +21,7 @@ slides:
 summary: Technical report submitted to the Indiana Department of Environmental Management
 tags: [water quality] 
 title: Indiana Lake Water Quality Assessment Report for 2015-2019
-url_code: 'https://github.com/corysauve'
+url_code: 
 url_dataset:
 url_pdf: "lwqa19.pdf"
 url_poster: 
