@@ -54,6 +54,7 @@ date_format = "Jan 2006"
   company_url = "https://oneill.indiana.edu/index.html"
   location = "Bloomington, Indiana"
   date_start = "2018-05-01"
+  date_end = "2019-12-01"
   description = """
 
   
