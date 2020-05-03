@@ -29,8 +29,6 @@ user_groups:
 ---
 
 
-![](website/static/img/header.png)
-
 
 
 
