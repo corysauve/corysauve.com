@@ -5,29 +5,12 @@
     <link>/post/</link>
       <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 24 Aug 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Cory Sauve 2020</copyright>
     <image>
-      <url>/img/icon-192.png</url>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Posts</title>
       <link>/post/</link>
     </image>
-    
-    <item>
-      <title>Inaugural Post</title>
-      <link>/post/welcome-to-my-website/</link>
-      <pubDate>Sat, 24 Aug 2019 00:00:00 +0000</pubDate>
-      <guid>/post/welcome-to-my-website/</guid>
-      <description>
-
-
-&lt;p&gt;Thanks for checking out my site! I’ve wanted to improve my online precence for awhile now and&lt;br /&gt;
-have finally sat down and made a website. I created and am maintaining this site via the R &lt;code&gt;blogdown&lt;/code&gt; package and Hugo. You can check out my GitHub repo if your interested in the use&lt;br /&gt;
-of &lt;code&gt;blogdown&lt;/code&gt; to make static websites.&lt;/p&gt;
-&lt;p&gt;My goal for this site is to accomplish two things: first to serve as a medium for which I can start bloggging my programming endevours relating to my work and random things that interest me, as well as to serve as a digitial resume and portfolio. I’m hoping to have a new post up every week. Now that it’s football season again, expect some fantasy football analysis in R and Python (yes, this is what I do on the weekends for fun).&lt;/p&gt;
-&lt;p&gt;Anyway, thanks for visiting my site!&lt;/p&gt;
-&lt;p&gt;– Cory&lt;/p&gt;
-</description>
-    </item>
     
   </channel>
 </rss>

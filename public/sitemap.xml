@@ -1,6 +1,56 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/courses/example/example1/</loc>
+    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/courses/example/</loc>
+    <lastmod>2018-09-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/courses/example/example2/</loc>
+    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/about/</loc>
+    <lastmod>2020-05-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/</loc>
+    <lastmod>2020-05-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/contact/</loc>
+    <lastmod>2020-05-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2020-05-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/projects/</loc>
+    <lastmod>2020-05-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/talk/</loc>
+    <lastmod>2020-05-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/talks_pubs/</loc>
+    <lastmod>2020-05-01T00:00:00+00:00</lastmod>
+  </url>
   
   <url>
     <loc>/authors/admin/</loc>
@@ -14,11 +64,6 @@
   
   <url>
     <loc>/tags/citizen-science/</loc>
-    <lastmod>2019-11-12T15:30:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/</loc>
     <lastmod>2019-11-12T15:30:00+00:00</lastmod>
   </url>
   
@@ -38,11 +83,6 @@
   </url>
   
   <url>
-    <loc>/talk/</loc>
-    <lastmod>2019-11-12T15:30:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tags/</loc>
     <lastmod>2019-11-12T15:30:00+00:00</lastmod>
   </url>
@@ -50,16 +90,6 @@
   <url>
     <loc>/talk/nalms19/</loc>
     <lastmod>2019-11-12T15:30:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/welcome-to-my-website/</loc>
-    <lastmod>2019-08-24T20:16:50-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/</loc>
-    <lastmod>2019-08-24T20:16:50-04:00</lastmod>
   </url>
   
   <url>
@@ -118,11 +148,19 @@
   </url>
   
   <url>
+    <loc>/authors/admin_home/</loc>
+  </url>
+  
+  <url>
     <loc>/categories/</loc>
   </url>
   
   <url>
     <loc>/courses/</loc>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
   </url>
   
   <url>
