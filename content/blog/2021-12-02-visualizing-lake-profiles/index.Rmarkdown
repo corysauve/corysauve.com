@@ -1,5 +1,6 @@
 ---
 title: Visualizing Lake Profiles
+layout: single-sidebar
 author: 'Cory Sauve'
 date: '2021-12-02'
 slug: []

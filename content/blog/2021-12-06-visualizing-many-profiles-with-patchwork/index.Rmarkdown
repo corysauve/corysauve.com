@@ -1,5 +1,6 @@
 ---
 title: Visualizing many profiles with {patchwork}
+layout: single-sidebar
 author: 'Cory Sauve'
 date: '2021-12-06'
 slug: []
@@ -9,7 +10,7 @@ output:
   blogdown::html_page: 
     toc: true 
     number_sections: true 
-    toc_depth: 1
+    toc_depth: 2
 ---
 
 ```{r, include = FALSE}
