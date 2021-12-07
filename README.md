@@ -5,9 +5,7 @@ Status](https://api.netlify.com/api/v1/badges/aac0c78b-e434-47d6-97fb-15f59540ec
 
 <br>
 
-This is my personal blog built via
-[Hugo-Apero](https://github.com/hugo-apero) and
-[blogdown](https://github.com/rstudio/blogdown).
+This is my personal blog built via [Hugo-Apero](https://github.com/hugo-apero) and [blogdown](https://github.com/rstudio/blogdown).You can find it at [corysauve.com](https://corysauve.com).
 
 ## Table of Posts
 
