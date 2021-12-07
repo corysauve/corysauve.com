@@ -1,0 +1,185 @@
+---
+title: Visualizing Lake Profiles
+author: 'Cory Sauve'
+date: '2021-12-02'
+slug: []
+subtitle: "How to visualize lake profiles with {ggplot2}"
+summary: "How to visualize lake profiles with {ggplot2}"
+output:
+  blogdown::html_page: 
+    toc: true 
+    number_sections: true 
+    toc_depth: 1
+---
+
+## Overview 
+
+In this post, we're going to cover how to visualize lake profiles using `ggplot2`. Let's jump right in!
+
+## Some housekeeping 
+
+We'll be using the `r4es` package for the dataset in this post. It's currently available on my [GitHub](https://github.com/corysauve/r4es) and can be downloaded by:
+```{r eval=FALSE, message=FALSE, warning=FALSE}
+# install.packages("devtools")
+devtools::install_github("corysauve/r4es")
+```
+
+
+## Taking a look at the data 
+
+It's always a good idea to take a look at the data before we try to plot anything: 
+```{r glimpse}
+library(r4es)
+dplyr::glimpse(university_lake)
+```
+
+`glimpse()` is a really handy function to get a snapshot of what your data look like. In our case, it looks like each row is a discrete *depth* and columns 3-28 are different *parameters* collected at each depth.
+
+<br>
+
+## Our first figure  
+
+We'll start with a simple figure by making creating a temperature profile. When making any figure with `ggplot2` the first step is to call `ggplot()` and map our data: 
+```{r ggplot}
+library(ggplot2)
+
+ggplot(data = university_lake)
+```
+
+<br>
+
+You'll notice that this only gives us a blank output. That's because we only provided `ggplot2` with what data to use and not what to do with those data. In addition to providing our data, we must also tell `ggplot2` what to put on the x and y-axis by mapping to an *aesthetic*. We do this by: 
+```{r aes}
+ggplot(data = university_lake,  
+       aes(x = temp_c, y = depth))  
+```
+
+<br>
+
+We can see that the output changed but it's still quite uneventful. The next step is to add the first *layer* to the figure and in our case, that will be points: 
+```{r points}
+ggplot(data = university_lake,  
+       aes(x = temp_c, y = depth)) + 
+  geom_point()
+```
+
+<br>
+
+Now there's some data! Granted the figure is ugly, but it's a start! Let's connect the dots next:
+```{r path}
+ggplot(data = university_lake,  
+       aes(x = temp_c, y = depth)) + 
+  geom_point() +
+  geom_path()
+```
+
+<br>
+
+When visualizing depth profiles, it is more intuitive to have the surface measurement at the top (**"0"** in our case). `scale_y_reverse()` makes that task quite simple:
+```{r axis}
+ggplot(data = university_lake,  
+       aes(x = temp_c, y = depth)) + 
+  geom_point() +
+  geom_path() + 
+  scale_y_reverse()
+```
+
+Much better, at least intuitively. Now we should make things less harmful to the eyes.
+
+<br>
+
+## Making things nice 
+
+The first aspect I normally look to change are the axis breaks and titles I'm actually happy with the default breaks in this case, so we just need to rename the axis titles with `labs()`: 
+```{r labs}
+ggplot(data = university_lake,  
+       aes(x = temp_c, y = depth)) + 
+  geom_point() +
+  geom_path() + 
+  scale_y_reverse() +
+  labs(x = "Temperature (°C)", 
+       y = "Depth (m)") 
+```
+
+<br>
+
+You can also add a `title`, `subtitle`, and figure `caption` within `labs()`:
+```{r lab-options}
+ggplot(data = university_lake,  
+       aes(x = temp_c, y = depth)) + 
+  geom_point() +
+  geom_path() + 
+  scale_y_reverse() +
+  labs(x = "Temperature (°C)", 
+       y = "Depth (m)", 
+       title = "Temperature Profile", 
+       subtitle = "University Lake, Bloomington, IN", 
+       caption = "Data/Figure: Cory Sauve") 
+```
+
+<br>
+
+If you're making a figure for a scientific report or publication, we'd want this information at the bottom: 
+```{r caption-location}
+ggplot(data = university_lake,  
+       aes(x = temp_c, y = depth)) + 
+  geom_point(size = 1.5) +
+  geom_path(size = 1) + 
+  scale_y_reverse() +
+  labs(x = "Temperature (°C)", 
+       y = "Depth (m)",
+       caption = "Fig 1: Temperature profile for University Lake, Bloomington, IN") +
+  theme(plot.caption = element_text(hjust = 0, vjust = -0.5, size = 12))
+```
+
+<br>
+
+Notice the use of `theme()` here to change the position and size of the caption. We can modify almost every aspect of our figure with `theme()`. `ggplot2` also has quite a few built in themes if you're in a hurry:
+```{r ggplot2-themes, echo=FALSE, fig.width=7, fig.height=12}
+library(patchwork)
+
+p <- ggplot(data = university_lake,  
+       aes(x = temp_c, y = depth)) + 
+  geom_point() +
+  geom_path() + 
+  scale_y_reverse() +
+  labs(x = "Temperature (°C)", 
+       y = "Depth (m)") 
+
+p_grey <- p + theme(plot.caption = element_text(hjust = 0, vjust = -0.5, size = 12)) + ggtitle("theme_grey()")
+p_bw <- p + theme_bw() + theme(plot.caption = element_text(hjust = 0, vjust = -0.5, size = 12)) + ggtitle("theme_bw()")
+p_linedraw <- p + theme_linedraw() + theme(plot.caption = element_text(hjust = 0, vjust = -0.5, size = 12)) + ggtitle("theme_linedraw()")
+p_light <- p + theme_light() + theme(plot.caption = element_text(hjust = 0, vjust = -0.5, size = 12)) + ggtitle("theme_light()")
+p_dark <- p + theme_dark() + theme(plot.caption = element_text(hjust = 0, vjust = -0.5, size = 12)) + ggtitle("theme_dark()")
+p_minimal <- p + theme_minimal() + theme(plot.caption = element_text(hjust = 0, vjust = -0.5, size = 12)) + ggtitle("theme_minimal()")
+p_classic <- p + theme_classic() + theme(plot.caption = element_text(hjust = 0, vjust = -0.5, size = 12)) + ggtitle("theme_classic()")
+p_void <- p + theme_void() + theme(plot.caption = element_text(hjust = 0, vjust = -0.5, size = 12)) + ggtitle("theme_void()")
+
+(p_grey + p_bw + p_linedraw + p_light) / (p_dark + p_minimal + p_classic + p_void)
+```
+
+<br>
+
+In our case, we're going to start with `theme_light()` and modify to our liking with `theme()`:
+```{r final-plot, fig.width=7, fig.height=7}
+ggplot(data = university_lake,  
+       aes(x = temp_c, y = depth)) + 
+  geom_point() +
+  geom_path() + 
+  scale_y_reverse() +
+  labs(x = "Temperature (°C)", 
+       y = "Depth (m)", 
+       caption = "Fig 1: Temperature profile for University Lake, Bloomington, IN") +
+  theme_light() +
+  theme(axis.text = element_text(size = 12), 
+        axis.title = element_text(size = 14),
+        plot.caption = element_text(hjust = -1, vjust = -10, size = 14), 
+        plot.margin = unit(c(1, 1, 1.5, 1), "cm"))
+```
+
+We did it! We now have a high-quality temperature profile. If you want to save this figure, you can do so with `ggsave()`:
+```{r save, eval=FALSE}
+ggsave(last_plot(), filename = "path/to/save/figure.png", height = 8, width = 12, dpi = 500)
+```
+
+

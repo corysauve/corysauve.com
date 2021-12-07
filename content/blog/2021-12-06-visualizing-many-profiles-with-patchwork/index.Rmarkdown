@@ -1,0 +1,188 @@
+---
+title: Visualizing many profiles with {patchwork}
+author: 'Cory Sauve'
+date: '2021-12-06'
+slug: []
+subtitle: "How to visualize multiple lake profiles with {ggplot2} and {patchwork}"
+summary: "How to visualize multiple lake profiles with {ggplot2} and {patchwork}"
+output:
+  blogdown::html_page: 
+    toc: true 
+    number_sections: true 
+    toc_depth: 1
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+## Overview
+
+For this post, we're going to build off of the [*Visualizing Lake Profiles*](http://localhost:4321/blog/2021-12-02-visualizing-lake-profiles/) and learn how to make subplots with `patchwork`. We'll also add some annotations to the final plots.
+
+## Some housekeeping 
+
+We'll be using the `r4es` package for the dataset in this post. It's currently available on my [GitHub](https://github.com/corysauve/r4es) and can be downloaded by:
+```{r eval=FALSE, message=FALSE, warning=FALSE}
+# install.packages("devtools")
+devtools::install_github("corysauve/r4es")
+```
+
+## A quick refresher
+
+Last time, we made a temperature profile using ggplot2:
+```{r temp-profile}
+library(r4es)
+library(ggplot2)
+
+ggplot(data = university_lake,  
+       aes(x = temp_c, y = depth)) + 
+  geom_point() +
+  geom_path() + 
+  scale_y_reverse() +
+  labs(x = "Temperature (°C)", 
+       y = "Depth (m)") +
+  theme_light() +
+  theme(axis.text = element_text(size = 12), 
+        axis.title = element_text(size = 14),
+        plot.caption = element_text(hjust = -1, vjust = -10, size = 14), 
+        plot.margin = unit(c(1, 1, 1.5, 1), "cm"))
+```
+
+This time we'll visualize additional parameters and compose them together into one plot. 
+
+Let's first remind ourselves what the data look like: 
+```{r}
+dplyr::glimpse(university_lake)
+```
+
+## Dissolved oxygen 
+
+Dissolved oxygen and temperature are commonly plotted on the same figure in limnology. The major flaw with doing this on the *same* axis is that it is difficult to interpret since each have different scales. Instead, plotting each parameter as a different *subplot* allows for both to be interpreted by the reader simultaneously while not running into a scale issue. 
+
+`ggplot2` doesn't allow you to even plot two lines of differing scales on the same plot (for good reason). We could accomplish this using base graphics, but *should* we? I think not. 
+
+Since we already have our temperature plot, we just need to replicate the same thing but with `do_mgL`. Most of our elements can be copied, but pay close attention to: 
+
+* `aes(x = ...)`
+* `labs(x = "...")`
+
+Let's make the initial plot:
+```{r}
+ggplot(data = university_lake, 
+       aes(x = do_mgl, y = depth)) + 
+  geom_point() + 
+  geom_path() +
+  scale_y_reverse(name = "Depth (m)") +
+  labs(x = "Dissolved Oxygen (mg/L)", 
+       y = "Depth (m)") + 
+  theme_light() +
+  theme(axis.text = element_text(size = 12), 
+        axis.title = element_text(size = 14),
+        plot.caption = element_text(hjust = -1, vjust = -10, size = 14), 
+        plot.margin = unit(c(1, 1, 1.5, 1), "cm"))
+```
+
+Looks good! Now we need to save each subplot as an object to ensemble our patchwork: 
+```{r}
+p_temp <- 
+  ggplot(data = university_lake,  
+         aes(x = temp_c, y = depth)) + 
+  geom_point() +
+  geom_path() + 
+  scale_y_reverse() +
+  labs(x = "Temperature (°C)", 
+       y = "Depth (m)") +
+  theme_light() +
+  theme(axis.text = element_text(size = 12), 
+        axis.title = element_text(size = 14),
+        plot.caption = element_text(hjust = -1, vjust = -10, size = 14), 
+        plot.margin = unit(c(1, 1, 1.5, 1), "cm")) 
+  
+p_do <- 
+  ggplot(data = university_lake, 
+         aes(x = do_mgl, y = depth)) + 
+  geom_point() + 
+  geom_path() +
+  scale_y_reverse(name = "Depth (m)") +
+  labs(x = "Dissolved Oxygen (mg/L)", 
+       y = "Depth (m)") + 
+  theme_light() +
+  theme(axis.text = element_text(size = 12), 
+        axis.title = element_text(size = 14),
+        plot.caption = element_text(hjust = -1, vjust = -10, size = 14), 
+        plot.margin = unit(c(1, 1, 1.5, 1), "cm"))
+```
+
+## Creating our patchwork
+
+Now that we have our figures saved as objects (`p_temp`, `p_do`), it's time to make our final plot with the (`patchwork` package)[https://patchwork.data-imaginist.com/]. 
+
+We are only going to scratch the surface of what `patchwork` can do. Our use case is going to be quite simple (two side-by-side plots) so stay tuned for more complicated figure compositions in the future. 
+
+To combine our figures, we simply add them together: 
+```{r}
+library(patchwork) 
+
+p_temp + p_do
+```
+
+Congrats! We have the start of our final figure. It's really remarkable how simple `patchwork` makes this task. We can expand our initial plot to make it cleaner. 
+
+### Combining axis titles 
+
+In my opinion, when subplots share the same y-axis it is best to only show one. I generally preserve the left subplot and remove the right subplot:
+```{r}
+# p_temp stays the same, so no need to override
+p_do <- 
+  ggplot(data = university_lake, 
+         aes(x = do_mgl, y = depth)) + 
+  geom_point() + 
+  geom_path() +
+  scale_y_reverse(name = "") +
+  labs(x = "Dissolved Oxygen (mg/L)", 
+       y = "") + 
+  theme_light() +
+  theme(axis.text = element_text(size = 12), 
+        axis.title = element_text(size = 14),
+        plot.caption = element_text(hjust = -1, vjust = -10, size = 14), 
+        plot.margin = unit(c(1, 1, 1.5, 1), "cm"))
+
+p_temp + p_do
+```
+
+### Simplifying the theme 
+ 
+You may have noticed that we have some duplicated code in `theme()`. Perhaps a cleaner alternative is to create each figure and then apply the theme after we create our patchwork: 
+```{r}
+p_temp <- 
+  ggplot(data = university_lake,  
+         aes(x = temp_c, y = depth)) + 
+  geom_point() +
+  geom_path() + 
+  scale_y_reverse() +
+  labs(x = "Temperature (°C)", 
+       y = "Depth (m)")
+
+p_do <- 
+  ggplot(data = university_lake, 
+         aes(x = do_mgl, y = depth)) + 
+  geom_point() + 
+  geom_path() +
+  scale_y_reverse(name = "") +
+  labs(x = "Dissolved Oxygen (mg/L)", 
+       y = "Depth (m)") 
+
+plot <- p_temp + p_do 
+
+plot & 
+  plot_annotation(caption = "Fig 1: Temperature and oxygen profiles, University Lake, IN.") &
+  theme_light() &
+  theme(axis.text = element_text(size = 12), 
+        axis.title = element_text(size = 14),
+        plot.caption = element_text(hjust = 0, vjust = -1, size = 14), 
+        plot.margin = unit(c(1, 1, 1.5, 1), "cm"))
+```
