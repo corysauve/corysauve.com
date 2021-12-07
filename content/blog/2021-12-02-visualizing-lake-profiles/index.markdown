@@ -1,5 +1,5 @@
 ---
-title: Visualizing Lake Profiles
+title: Visualizing lake profiles
 layout: single-sidebar
 author: 'Cory Sauve'
 date: '2021-12-02'
