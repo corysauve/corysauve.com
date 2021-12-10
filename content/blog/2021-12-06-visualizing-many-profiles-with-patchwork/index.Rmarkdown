@@ -22,7 +22,7 @@ knitr::opts_chunk$set(
 
 ## Overview
 
-For this post, we're going to build off of the [*Visualizing Lake Profiles*](http://localhost:4321/blog/2021-12-02-visualizing-lake-profiles/) and learn how to make subplots with `patchwork`. We'll also add some annotations to the final plots.
+For this post, we're going to build off of the [*Visualizing Lake Profiles*](http://localhost:4321/blog/2021-12-02-visualizing-lake-profiles/) post and learn how to make subplots with `patchwork`. We'll also add some annotations to the final plots.
 
 ## Some housekeeping 
 
@@ -120,7 +120,7 @@ p_do <-
 
 ## Creating our patchwork
 
-Now that we have our figures saved as objects (`p_temp`, `p_do`), it's time to make our final plot with the (`patchwork` package)[https://patchwork.data-imaginist.com/]. 
+Now that we have our figures saved as objects (`p_temp`, `p_do`), it's time to make our final plot with the [`patchwork` ](https://patchwork.data-imaginist.com/) package. 
 
 We are only going to scratch the surface of what `patchwork` can do. Our use case is going to be quite simple (two side-by-side plots) so stay tuned for more complicated figure compositions in the future. 
 
