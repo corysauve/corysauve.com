@@ -6,7 +6,7 @@ date: "2021-11-15"
 date_end: "2021-11-19"
 draft: false
 event: 41th International Symposium of the North American Lake Management Society
-event_url: https://nalms.com/2021nmc/
+event_url: https://www.nalms.org/nalms2021/
 excerpt: Co-authored talk comparing methods for harmful cyanobacterial bloom monitoring
 featured: true
 layout: single
