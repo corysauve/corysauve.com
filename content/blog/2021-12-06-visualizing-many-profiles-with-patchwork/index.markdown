@@ -36,18 +36,21 @@ Last time, we made a temperature profile using ggplot2:
 library(r4es)
 library(ggplot2)
 
-ggplot(data = university_lake,  
-       aes(x = temp_c, y = depth)) + 
+ggplot(data = university_lake, aes(x = temp_c, y = depth)) + 
   geom_point() +
   geom_path() + 
   scale_y_reverse() +
-  labs(x = "Temperature (°C)", 
-       y = "Depth (m)") +
+  labs(
+    x = "Temperature (°C)", 
+    y = "Depth (m)"
+  ) +
   theme_light() +
-  theme(axis.text = element_text(size = 12), 
-        axis.title = element_text(size = 14),
-        plot.caption = element_text(hjust = -1, vjust = -10, size = 14), 
-        plot.margin = unit(c(1, 1, 1.5, 1), "cm"))
+  theme(
+    axis.text = element_text(size = 12), 
+    axis.title = element_text(size = 14),
+    plot.caption = element_text(hjust = -1, vjust = -10, size = 14), 
+    plot.margin = unit(c(1, 1, 1.5, 1), "cm")
+  )
 ```
 
 <img src="{{< blogdown/postref >}}index_files/figure-html/temp-profile-1.png" width="672" />
@@ -104,18 +107,21 @@ Since we already have our temperature plot, we just need to replicate the same t
 Let's make the initial plot:
 
 ```r
-ggplot(data = university_lake, 
-       aes(x = do_mgl, y = depth)) + 
+ggplot(data = university_lake, aes(x = do_mgl, y = depth)) + 
   geom_point() + 
   geom_path() +
   scale_y_reverse(name = "Depth (m)") +
-  labs(x = "Dissolved Oxygen (mg/L)", 
-       y = "Depth (m)") + 
+  labs(
+    x = "Dissolved Oxygen (mg/L)", 
+    y = "Depth (m)"
+  ) + 
   theme_light() +
-  theme(axis.text = element_text(size = 12), 
-        axis.title = element_text(size = 14),
-        plot.caption = element_text(hjust = -1, vjust = -10, size = 14), 
-        plot.margin = unit(c(1, 1, 1.5, 1), "cm"))
+  theme(
+    axis.text = element_text(size = 12), 
+    axis.title = element_text(size = 14),
+    plot.caption = element_text(hjust = -1, vjust = -10, size = 14), 
+    plot.margin = unit(c(1, 1, 1.5, 1), "cm")
+  )
 ```
 
 <img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-4-1.png" width="672" />
@@ -124,32 +130,38 @@ Looks good! Now we need to save each subplot as an object to ensemble our patchw
 
 ```r
 p_temp <- 
-  ggplot(data = university_lake,  
-         aes(x = temp_c, y = depth)) + 
+  ggplot(data = university_lake, aes(x = temp_c, y = depth)) + 
   geom_point() +
   geom_path() + 
   scale_y_reverse() +
-  labs(x = "Temperature (°C)", 
-       y = "Depth (m)") +
+  labs(
+    x = "Temperature (°C)", 
+    y = "Depth (m)"
+  ) +
   theme_light() +
-  theme(axis.text = element_text(size = 12), 
-        axis.title = element_text(size = 14),
-        plot.caption = element_text(hjust = -1, vjust = -10, size = 14), 
-        plot.margin = unit(c(1, 1, 1.5, 1), "cm")) 
+  theme(
+    axis.text = element_text(size = 12), 
+    axis.title = element_text(size = 14),
+    plot.caption = element_text(hjust = -1, vjust = -10, size = 14), 
+    plot.margin = unit(c(1, 1, 1.5, 1), "cm")
+  ) 
   
 p_do <- 
-  ggplot(data = university_lake, 
-         aes(x = do_mgl, y = depth)) + 
+  ggplot(data = university_lake, aes(x = do_mgl, y = depth)) + 
   geom_point() + 
   geom_path() +
   scale_y_reverse(name = "Depth (m)") +
-  labs(x = "Dissolved Oxygen (mg/L)", 
-       y = "Depth (m)") + 
+  labs(
+    x = "Dissolved Oxygen (mg/L)", 
+    y = "Depth (m)"
+  ) + 
   theme_light() +
-  theme(axis.text = element_text(size = 12), 
-        axis.title = element_text(size = 14),
-        plot.caption = element_text(hjust = -1, vjust = -10, size = 14), 
-        plot.margin = unit(c(1, 1, 1.5, 1), "cm"))
+  theme(
+    axis.text = element_text(size = 12), 
+    axis.title = element_text(size = 14),
+    plot.caption = element_text(hjust = -1, vjust = -10, size = 14), 
+    plot.margin = unit(c(1, 1, 1.5, 1), "cm")
+  )
 ```
 
 ## Creating our patchwork
@@ -177,18 +189,21 @@ In my opinion, when subplots share the same y-axis it is best to only show one. 
 ```r
 # p_temp stays the same, so no need to override
 p_do <- 
-  ggplot(data = university_lake, 
-         aes(x = do_mgl, y = depth)) + 
+  ggplot(data = university_lake, aes(x = do_mgl, y = depth)) + 
   geom_point() + 
   geom_path() +
   scale_y_reverse(name = "") +
-  labs(x = "Dissolved Oxygen (mg/L)", 
-       y = "") + 
+  labs(
+    x = "Dissolved Oxygen (mg/L)", 
+    y = ""
+  ) + 
   theme_light() +
-  theme(axis.text = element_text(size = 12), 
-        axis.title = element_text(size = 14),
-        plot.caption = element_text(hjust = -1, vjust = -10, size = 14), 
-        plot.margin = unit(c(1, 1, 1.5, 1), "cm"))
+  theme(
+    axis.text = element_text(size = 12), 
+    axis.title = element_text(size = 14),
+    plot.caption = element_text(hjust = -1, vjust = -10, size = 14), 
+    plot.margin = unit(c(1, 1, 1.5, 1), "cm")
+  )
 
 p_temp + p_do
 ```
@@ -201,32 +216,36 @@ You may have noticed that we have some duplicated code in `theme()`. Perhaps a c
 
 ```r
 p_temp <- 
-  ggplot(data = university_lake,  
-         aes(x = temp_c, y = depth)) + 
+  ggplot(data = university_lake, aes(x = temp_c, y = depth)) + 
   geom_point() +
   geom_path() + 
   scale_y_reverse() +
-  labs(x = "Temperature (°C)", 
-       y = "Depth (m)")
+  labs(
+    x = "Temperature (°C)", 
+    y = "Depth (m)"
+  )
 
 p_do <- 
-  ggplot(data = university_lake, 
-         aes(x = do_mgl, y = depth)) + 
+  ggplot(data = university_lake, aes(x = do_mgl, y = depth)) + 
   geom_point() + 
   geom_path() +
   scale_y_reverse(name = "") +
-  labs(x = "Dissolved Oxygen (mg/L)", 
-       y = "Depth (m)") 
+  labs(
+    x = "Dissolved Oxygen (mg/L)", 
+    y = "Depth (m)"
+  ) 
 
 plot <- p_temp + p_do 
 
 plot & 
   plot_annotation(caption = "Fig 1: Temperature and oxygen profiles, University Lake, IN.") &
   theme_light() &
-  theme(axis.text = element_text(size = 12), 
-        axis.title = element_text(size = 14),
-        plot.caption = element_text(hjust = 0, vjust = -1, size = 14), 
-        plot.margin = unit(c(1, 1, 1.5, 1), "cm"))
+  theme(
+    axis.text = element_text(size = 12), 
+    axis.title = element_text(size = 14),
+    plot.caption = element_text(hjust = 0, vjust = -1, size = 14), 
+    plot.margin = unit(c(1, 1, 1.5, 1), "cm")
+  )
 ```
 
 <img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-8-1.png" width="672" />
