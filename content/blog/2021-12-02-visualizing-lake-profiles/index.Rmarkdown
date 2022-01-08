@@ -51,16 +51,14 @@ ggplot(data = university_lake)
 
 You'll notice that this only gives us a blank output. That's because we only provided `ggplot2` with what data to use and not what to do with those data. In addition to providing our data, we must also tell `ggplot2` what to put on the x and y-axis by mapping to an *aesthetic*. We do this by: 
 ```{r aes}
-ggplot(data = university_lake,  
-       aes(x = temp_c, y = depth))  
+ggplot(data = university_lake, aes(x = temp_c, y = depth))  
 ```
 
 <br>
 
 We can see that the output changed but it's still quite uneventful. The next step is to add the first *layer* to the figure and in our case, that will be points: 
 ```{r points}
-ggplot(data = university_lake,  
-       aes(x = temp_c, y = depth)) + 
+ggplot(data = university_lake, aes(x = temp_c, y = depth)) + 
   geom_point()
 ```
 
@@ -68,8 +66,7 @@ ggplot(data = university_lake,
 
 Now there's some data! Granted the figure is ugly, but it's a start! Let's connect the dots next:
 ```{r path}
-ggplot(data = university_lake,  
-       aes(x = temp_c, y = depth)) + 
+ggplot(data = university_lake, aes(x = temp_c, y = depth)) + 
   geom_point() +
   geom_path()
 ```
@@ -78,8 +75,7 @@ ggplot(data = university_lake,
 
 When visualizing depth profiles, it is more intuitive to have the surface measurement at the top (**"0"** in our case). `scale_y_reverse()` makes that task quite simple:
 ```{r axis}
-ggplot(data = university_lake,  
-       aes(x = temp_c, y = depth)) + 
+ggplot(data = university_lake, aes(x = temp_c, y = depth)) + 
   geom_point() +
   geom_path() + 
   scale_y_reverse()
@@ -93,43 +89,46 @@ Much better, at least intuitively. Now we should make things less harmful to the
 
 The first aspect I normally look to change are the axis breaks and titles I'm actually happy with the default breaks in this case, so we just need to rename the axis titles with `labs()`: 
 ```{r labs}
-ggplot(data = university_lake,  
-       aes(x = temp_c, y = depth)) + 
+ggplot(data = university_lake, aes(x = temp_c, y = depth)) + 
   geom_point() +
   geom_path() + 
   scale_y_reverse() +
-  labs(x = "Temperature (°C)", 
-       y = "Depth (m)") 
+  labs(
+    x = "Temperature (°C)", 
+    y = "Depth (m)"
+  )
 ```
 
 <br>
 
 You can also add a `title`, `subtitle`, and figure `caption` within `labs()`:
 ```{r lab-options}
-ggplot(data = university_lake,  
-       aes(x = temp_c, y = depth)) + 
+ggplot(data = university_lake, aes(x = temp_c, y = depth)) + 
   geom_point() +
   geom_path() + 
   scale_y_reverse() +
-  labs(x = "Temperature (°C)", 
-       y = "Depth (m)", 
-       title = "Temperature Profile", 
-       subtitle = "University Lake, Bloomington, IN", 
-       caption = "Data/Figure: Cory Sauve") 
+  labs(
+    x = "Temperature (°C)", 
+    y = "Depth (m)", 
+    title = "Temperature Profile", 
+    subtitle = "University Lake, Bloomington, IN", 
+    caption = "Data/Figure: Cory Sauve"
+  ) 
 ```
 
 <br>
 
 If you're making a figure for a scientific report or publication, we'd want this information at the bottom: 
 ```{r caption-location}
-ggplot(data = university_lake,  
-       aes(x = temp_c, y = depth)) + 
+ggplot(data = university_lake, aes(x = temp_c, y = depth)) + 
   geom_point(size = 1.5) +
   geom_path(size = 1) + 
   scale_y_reverse() +
-  labs(x = "Temperature (°C)", 
-       y = "Depth (m)",
-       caption = "Fig 1: Temperature profile for University Lake, Bloomington, IN") +
+  labs(
+    x = "Temperature (°C)", 
+    y = "Depth (m)",
+    caption = "Fig 1: Temperature profile for University Lake, Bloomington, IN"
+  ) +
   theme(plot.caption = element_text(hjust = 0, vjust = -0.5, size = 12))
 ```
 
@@ -139,13 +138,15 @@ Notice the use of `theme()` here to change the position and size of the caption.
 ```{r ggplot2-themes, echo=FALSE, fig.width=7, fig.height=12}
 library(patchwork)
 
-p <- ggplot(data = university_lake,  
-       aes(x = temp_c, y = depth)) + 
+p <- 
+  ggplot(data = university_lake, aes(x = temp_c, y = depth)) + 
   geom_point() +
   geom_path() + 
   scale_y_reverse() +
-  labs(x = "Temperature (°C)", 
-       y = "Depth (m)") 
+  labs(
+    x = "Temperature (°C)", 
+    y = "Depth (m)"
+  ) 
 
 p_grey <- p + theme(plot.caption = element_text(hjust = 0, vjust = -0.5, size = 12)) + ggtitle("theme_grey()")
 p_bw <- p + theme_bw() + theme(plot.caption = element_text(hjust = 0, vjust = -0.5, size = 12)) + ggtitle("theme_bw()")
@@ -163,19 +164,22 @@ p_void <- p + theme_void() + theme(plot.caption = element_text(hjust = 0, vjust 
 
 In our case, we're going to start with `theme_light()` and modify to our liking with `theme()`:
 ```{r final-plot, fig.width=7, fig.height=7}
-ggplot(data = university_lake,  
-       aes(x = temp_c, y = depth)) + 
+ggplot(data = university_lake, aes(x = temp_c, y = depth)) + 
   geom_point() +
   geom_path() + 
   scale_y_reverse() +
-  labs(x = "Temperature (°C)", 
-       y = "Depth (m)", 
-       caption = "Fig 1: Temperature profile for University Lake, Bloomington, IN") +
+  labs(
+    x = "Temperature (°C)", 
+    y = "Depth (m)", 
+    caption = "Fig 1: Temperature profile for University Lake, Bloomington, IN"
+  ) +
   theme_light() +
-  theme(axis.text = element_text(size = 12), 
-        axis.title = element_text(size = 14),
-        plot.caption = element_text(hjust = -1, vjust = -10, size = 14), 
-        plot.margin = unit(c(1, 1, 1.5, 1), "cm"))
+  theme(
+    axis.text = element_text(size = 12), 
+    axis.title = element_text(size = 14),
+    plot.caption = element_text(hjust = -1, vjust = -10, size = 14), 
+    plot.margin = unit(c(1, 1, 1.5, 1), "cm")
+  )
 ```
 
 We did it! We now have a high-quality temperature profile. If you want to save this figure, you can do so with `ggsave()`:
