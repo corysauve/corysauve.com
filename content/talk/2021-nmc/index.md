@@ -18,7 +18,7 @@ links:
 location: Virtual
 show_post_time: false
 subtitle: 
-title: The Use of Imaing Flow Cytometry for Algal Monitoring and Classification
+title: The Use of Imaging Flow Cytometry for Algal Monitoring and Classification
 ---
 
 **Abstract**
