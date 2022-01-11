@@ -8,15 +8,14 @@ audio_link_label:
 link_list_label: "Interests"
 link_list: 
 - name: Limnology & Aquatic Ecology
-  url: https://www.epa.gov/national-aquatic-resource-surveys/nla
+  url: https://github.com/corysauve/r4limnology
 - name: DataViz
-  url: https://www.newyorker.com/books/page-turner/what-web-du-bois-conveyed-in-his-captivating-infographics
+  url: https://github.com/corysauve/tidytuesday
 - name: Machine Learning 
-  url: https://www.tidymodels.org/
 - name: Cooking 
-  url: https://cooking.nytimes.com/ourcooks/melissa-clark/my-recipes
+  url: https://github.com/corysauve/cookbook
 - name: Books
-  url: https://www.colsonwhitehead.com/books
+  url: https://github.com/corysauve/bookshelf
 ---
 
 ** index doesn't contain a body, just front matter above.
